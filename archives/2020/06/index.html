@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>归档 | Kanxz</title><meta name="description"><meta name="author" content="Kanxz"><meta name="copyright" content="Kanxz"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.jpg"><link rel="canonical" href="https://kanxz.github.io/archives/2020/06/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin="crossorigin"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="归档"><meta property="og:url" content="https://kanxz.github.io/archives/2020/06/"><meta property="og:site_name" content="Kanxz"><meta property="og:description"><meta property="og:image" content="https://kanxz.github.io/img/avatar.jpg"><meta property="article:published_time" content="2020-07-22T10:02:03.267Z"><meta property="article:modified_time" content="2020-07-22T10:02:03.267Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-157536372-1', 'auto');
+ga('send', 'pageview');
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: {"text":"富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善","fontSize":"15px"},
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: false
+  }</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 4.2.1"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">26</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">23</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">11</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div></div></div></div><div id="body-wrap"><header class="not-index-bg" id="page-header" style="background-image: url(/img/archive.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">Kanxz</a></span><span class="pull-right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="page_site-info"><h1 id="site_title">归档</h1></div></header><main class="layout_page" id="content-inner"><div id="archive"><div class="article-sort-title">文章总览 - 26</div><div class="article-sort"><div class="article-sort-item year">2020</div><div class="article-sort-item"><div class="article-sort-img"><a class="article-sort-item__img" href="/2020/06/27/%E5%8C%96%E5%AD%A6%E6%96%B9%E7%A8%8B%E5%BC%8F/"><img src="/img/cover/cover38.jpg" alt="化学方程式" onerror="this.onerror=null;this.src='/img/404.jpg'"></a></div><div class="article-sort-post"><a class="article-sort-item__post" href="/2020/06/27/%E5%8C%96%E5%AD%A6%E6%96%B9%E7%A8%8B%E5%BC%8F/"><i class="far fa-calendar-alt"></i><time class="article-sort-item__time" title="发表于 2020-06-27 15:56:51">2020-06-27</time><div class="article-sort-item__title">化学方程式</div></a></div></div><div class="article-sort-item"><div class="article-sort-img"><a class="article-sort-item__img" href="/2020/06/01/%E5%8C%BA%E9%97%B4%E5%88%86%E7%BB%84/"><img src="/img/cover/cover20.jpg" alt="区间分组" onerror="this.onerror=null;this.src='/img/404.jpg'"></a></div><div class="article-sort-post"><a class="article-sort-item__post" href="/2020/06/01/%E5%8C%BA%E9%97%B4%E5%88%86%E7%BB%84/"><i class="far fa-calendar-alt"></i><time class="article-sort-item__time" title="发表于 2020-06-01 10:17:47">2020-06-01</time><div class="article-sort-item__title">区间分组</div></a></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Kanxz</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">文章</div><div class="length_num">26</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">标签</div><div class="length_num">23</div></a></div><div class="card-info-data-item is-center">     <a href="/categories"><div class="headline">分类</div><div class="length_num">11</div></a></div></div><div class="card-info-bookmark is-center"><button class="button--animated" id="bookmark-it" title="加入书签"><i class="fas fa-bookmark"></i><span>加入书签</span></button></div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a href="/2020/07/22/test/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/img/cover/cover31.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="test" alt="test"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/07/22/test/" title="test">test</div><time class="aside-post_meta post-meta__date" title="发表于 2020-07-22 17:44:37">2020-07-22</time></div></a></div><div class="aside-recent-post"><a href="/2020/06/27/%E5%8C%96%E5%AD%A6%E6%96%B9%E7%A8%8B%E5%BC%8F/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/img/cover/cover38.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="化学方程式" alt="化学方程式"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/06/27/%E5%8C%96%E5%AD%A6%E6%96%B9%E7%A8%8B%E5%BC%8F/" title="化学方程式">化学方程式</div><time class="aside-post_meta post-meta__date" title="发表于 2020-06-27 15:56:51">2020-06-27</time></div></a></div><div class="aside-recent-post"><a href="/2020/06/01/%E5%8C%BA%E9%97%B4%E5%88%86%E7%BB%84/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/img/cover/cover20.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="区间分组" alt="区间分组"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/06/01/%E5%8C%BA%E9%97%B4%E5%88%86%E7%BB%84/" title="区间分组">区间分组</div><time class="aside-post_meta post-meta__date" title="发表于 2020-06-01 10:17:47">2020-06-01</time></div></a></div><div class="aside-recent-post"><a href="/2020/05/28/Trie%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%9F%E8%AE%A1/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/img/cover/cover35.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="Trie字符串统计" alt="Trie字符串统计"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/05/28/Trie%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%9F%E8%AE%A1/" title="Trie字符串统计">Trie字符串统计</div><time class="aside-post_meta post-meta__date" title="发表于 2020-05-28 22:34:54">2020-05-28</time></div></a></div><div class="aside-recent-post"><a href="/2020/05/04/%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%88%AC%E8%99%AB/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://s1.ax1x.com/2020/05/04/Y9NcU1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="第一个python爬虫" alt="第一个python爬虫"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/05/04/%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%88%AC%E8%99%AB/" title="第一个python爬虫">第一个python爬虫</div><time class="aside-post_meta post-meta__date" title="发表于 2020-05-04 10:29:16">2020-05-04</time></div></a></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Linux/"><span class="card-category-list-name">Linux</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/PTA/"><span class="card-category-list-name">PTA</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/blog/"><span class="card-category-list-name">blog</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/python/"><span class="card-category-list-name">python</span><span class="card-category-list-count">1</span></a></li><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/python/%E7%88%AC%E8%99%AB/"><span class="card-category-list-name">爬虫</span><span class="card-category-list-count">1</span></a></li></ul><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/"><span class="card-category-list-name">算法</span><span class="card-category-list-count">17</span></a></li><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"><span class="card-category-list-name">动态规划</span><span class="card-category-list-count">8</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/%E5%9B%BE%E8%AE%BA/"><span class="card-category-list-name">图论</span><span class="card-category-list-count">2</span></a></li></ul>
+            <li class="card-category-list-item more is-center"><a class="card-category-list-link-more" href="/categories">
+                <span>查看更多</span><i class="fas fa-angle-right"></i></a></li>           
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href='/tags/AcWing/' style='font-size:17px; color:rgb(3, 175, 190)'>AcWing</a><a href='/tags/KMP/' style='font-size:16px; color:rgb(42, 60, 62)'>KMP</a><a href='/tags/Linux/' style='font-size:18px; color:rgb(141, 171, 95)'>Linux</a><a href='/tags/PTA/' style='font-size:20px; color:rgb(176, 13, 41)'>PTA</a><a href='/tags/Trie/' style='font-size:21px; color:rgb(5, 3, 32)'>Trie</a><a href='/tags/blog/' style='font-size:17px; color:rgb(25, 134, 141)'>blog</a><a href='/tags/hexo/' style='font-size:20px; color:rgb(7, 5, 130)'>hexo</a><a href='/tags/python/' style='font-size:18px; color:rgb(64, 137, 183)'>python</a><a href='/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/' style='font-size:21px; color:rgb(91, 89, 127)'>动态规划</a><a href='/tags/%E5%8D%95%E9%93%BE%E8%A1%A8/' style='font-size:18px; color:rgb(187, 187, 85)'>单链表</a><a href='/tags/%E5%9B%BE%E7%9A%84%E5%AD%98%E5%82%A8/' style='font-size:19px; color:rgb(33, 127, 50)'>图的存储</a><a href='/tags/%E5%9B%BE%E8%AE%BA/' style='font-size:17px; color:rgb(97, 139, 148)'>图论</a><a href='/tags/%E6%8E%92%E5%BA%8F/' style='font-size:17px; color:rgb(141, 194, 193)'>排序</a><a href='/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/' style='font-size:16px; color:rgb(195, 77, 109)'>最短路</a><a href='/tags/%E6%A0%91%E5%BD%A2DP/' style='font-size:18px; color:rgb(20, 123, 46)'>树形DP</a><a href='/tags/%E6%B7%B1%E6%90%9C/' style='font-size:18px; color:rgb(49, 171, 66)'>深搜</a><a href='/tags/%E7%88%AC%E8%99%AB/' style='font-size:19px; color:rgb(89, 142, 188)'>爬虫</a><a href='/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9DP/' style='font-size:21px; color:rgb(49, 191, 159)'>状态压缩DP</a><a href='/tags/%E7%AE%97%E6%B3%95/' style='font-size:20px; color:rgb(87, 29, 8)'>算法</a><a href='/tags/%E7%B4%A0%E6%95%B0/' style='font-size:19px; color:rgb(148, 106, 66)'>素数</a><a href='/tags/%E8%83%8C%E5%8C%85/' style='font-size:18px; color:rgb(192, 168, 143)'>背包</a><a href='/tags/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2/' style='font-size:17px; color:rgb(84, 18, 3)'>记忆化搜索</a><a href='/tags/%E8%B4%AA%E5%BF%83/' style='font-size:19px; color:rgb(49, 98, 141)'>贪心</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/07/"><span class="card-archive-list-date">七月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/06/"><span class="card-archive-list-date">六月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/05/"><span class="card-archive-list-date">五月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/04/"><span class="card-archive-list-date">四月 2020</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/03/"><span class="card-archive-list-date">三月 2020</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/02/"><span class="card-archive-list-date">二月 2020</span><span class="card-archive-list-count">8</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/01/"><span class="card-archive-list-date">一月 2020</span><span class="card-archive-list-count">3</span></a></li></ul></div></div></div></main><footer id="footer" style="background-image: url(/img/archive.jpg)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2020 By Kanxz</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button class="translate_chn_to_cht" id="translateLink" title="简繁转换">繁</button><button id="darkmode" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script defer id="ribbon" src="/js/third-party/canvas-ribbon.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/third-party/ClickShowText.js"></script><script src="https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js"></script></body></html>
